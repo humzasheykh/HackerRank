@@ -1,9 +1,11 @@
 
+# Setup array and and split all values
 arr = [list(map(int, input().split())) for _ in range(6)]
 sum = -float('inf')
 
-for row in range(len(A) - 2):
-    for col in range(len(A[row]) - 2):
+# Create a for statement that will print the highest sum after calculating
+for row in range(len(arr) - 2):
+    for col in range(len(arr[row]) - 2):
         sum = max(arr[row][col]
                   + arr[row][col + 1]
                   + arr[row][col + 2]
